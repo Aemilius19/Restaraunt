@@ -1,0 +1,20 @@
+﻿
+@model FoodItem
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="FoodName">FoodName</label>
+        <input asp-for="FoodName">
+        <span asp-validation-for="FoodName" style="color:red"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FoodDescription">FoodName</label>
+        <input asp-for="FoodDescription">
+        <span asp-validation-for="FoodDescription" style="color:red"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ImgFile">Img</label>
+        <input asp-for="ImgFile">
+        <span asp-validation-for="ImgFile" style="color:red"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
